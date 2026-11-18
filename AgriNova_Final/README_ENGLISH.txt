@@ -1,0 +1,1 @@
+AgriNova Flask smart agriculture project. See README_BANGLA.txt for Windows setup. Run START_WINDOWS.bat; open http://127.0.0.1:5000. Python 3.10+ required. Weather is live via Open-Meteo; soil data is manually entered. Local demo only; harden authentication before public deployment.
