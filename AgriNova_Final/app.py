@@ -214,6 +214,10 @@ def api_summary():
 @app.errorhandler(404)
 def not_found(_): return render_template("error.html", code=404, message="That page could not be found."),404
 
-if __name__=="__main__":
-    init_db()
-    app.run(host="127.0.0.1",port=5000,debug=False)
+import os
+
+# ... (baki code)
+
+if __name__ == "__main__":
+  port = int(os.environ.get("PORT", 5000))
+  app.run(host="0.0.0.0", port=port)
